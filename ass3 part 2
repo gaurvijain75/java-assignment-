@@ -1,0 +1,74 @@
+package com.shapes;
+
+class Manali extends Hillstations {
+
+    void famousfood() {
+        System.out.println("Manali: Siddu");
+    }
+
+    void famousfor() {
+        System.out.println("Manali: Snow mountains");
+    }
+}
+
+class Mussoorie extends Hillstations {
+
+    void famousfood() {
+        System.out.println("Mussoorie: Momos");
+    }
+
+    void famousfor() {
+        System.out.println("Mussoorie: Hills and waterfalls");
+    }
+}
+
+class Gulmarg extends Hillstations {
+
+    void famousfood() {
+        System.out.println("Gulmarg: Rogan Josh");
+    }
+
+    void famousfor() {
+        System.out.println("Gulmarg: Skiing");
+    }
+
+
+
+//parent class 
+package com.shapes;
+
+class Hillstations {
+
+    void famousfood() {
+        System.out.println("Famous food of hill station");
+    }
+
+    void famousfor() {
+        System.out.println("Famous for natural beauty");
+    }
+}
+//main
+package com.shapes;
+public class MainS {
+    public static void main(String[] args) {
+
+        Hillstations h;
+
+        h = new Manali();     
+        h.famousfood();
+        h.famousfor();
+
+        System.out.println();
+
+        h = new Mussoorie();
+        h.famousfood();
+        h.famousfor();
+
+        System.out.println();
+
+        h = new Gulmarg();
+        h.famousfood();
+        h.famousfor();
+    }
+}
+}
